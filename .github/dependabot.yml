@@ -7,28 +7,3 @@ updates:
     schedule:
       interval: "weekly"
 
- # Maintain dependencies for 
-registries:
-   maven-artifactory:
-    type: maven-repository
-    url: https://mvnrepository.com/artifact/org.apache.spark
-    updates:
-     - package-ecosystem: "maven"
-       directory: "/"
-       registries: "*"
-       schedule:
-          interval: "monthly"
-          
- # Maintain dependencies for cargo
-   registries:
-    cargo:
-    type: cargo-registry
-    registry: "crates.io"
-    url: https://crates.io/crates/datafusion/
-
-  # Maintain dependencies for python
-  #  registries:
-  # python-example:
-  # type: python-index
-   #  url: https://example.com/_packaging/my-feed/pypi/example
-   #  replaces-base: true

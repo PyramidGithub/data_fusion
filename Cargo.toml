@@ -6,6 +6,7 @@ members = [
     "examples",
     "sources/sql",
     "sources/flight-sql",
+    "Core",
 ]
 
 [patch.crates-io]
@@ -23,3 +24,4 @@ readme = "README.md"
 async-trait = "0.1.77"
 datafusion = "37.0.0"
 datafusion-substrait = "37.0.0"
+half = "2.1.0"

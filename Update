@@ -1,0 +1,52 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.comet:comet-common-spark3.4_2.12:jar:0.1.0-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.comet:comet-common-spark${spark.version.short}_${scala.binary.version}:0.1.0-SNAPSHOT, C:\Users\Administrator\Repos\data_fusion\common\pom.xml, line 34, column 15
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.comet:comet-parent-spark${spark.version.short}_${scala.binary.version}:0.1.0-SNAPSHOT, C:\Users\Administrator\Repos\data_fusion\pom.xml, line 27, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.comet:comet-spark-spark3.4_2.12:jar:0.1.0-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.comet:comet-spark-spark${spark.version.short}_${scala.binary.version}:0.1.0-SNAPSHOT, C:\Users\Administrator\Repos\data_fusion\spark\pom.xml, line 33, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.comet:comet-spark-integration-spark3.4_2.12:pom:0.1.0-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.comet:comet-spark-integration-spark${spark.version.short}_${scala.binary.version}:0.1.0-SNAPSHOT, C:\Users\Administrator\Repos\data_fusion\spark-integration\pom.xml, line 33, column 17
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ org.apache.comet:comet-spark-integration-spark${spark.version.short}_${scala.binary.version}:0.1.0-SNAPSHOT, C:\Users\Administrator\Repos\data_fusion\spark-integration\pom.xml, line 81, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.comet:comet-parent-spark3.4_2.12:pom:0.1.0-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.comet:comet-parent-spark${spark.version.short}_${scala.binary.version}:0.1.0-SNAPSHOT, C:\Users\Administrator\Repos\data_fusion\pom.xml, line 27, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Comet Project Parent POM                                           [pom]
+[INFO] comet-common                                                       [jar]
+[INFO] comet-spark                                                        [jar]
+[INFO] comet-spark-integration                                            [pom]
+[INFO] 
+[INFO] ------------< org.apache.comet:comet-parent-spark3.4_2.12 >-------------
+[INFO] Building Comet Project Parent POM 0.1.0-SNAPSHOT                   [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Comet Project Parent POM 0.1.0-SNAPSHOT:
+[INFO] 
+[INFO] Comet Project Parent POM ........................... FAILURE [  0.003 s]
+[INFO] comet-common ....................................... SKIPPED
+[INFO] comet-spark ........................................ SKIPPED
+[INFO] comet-spark-integration ............................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.195 s
+[INFO] Finished at: 2024-06-23T09:49:12-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "-". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: pre-clean, clean, post-clean, validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException

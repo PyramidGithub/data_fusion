@@ -1,2 +1,10 @@
 eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/spark-3.x=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
+encoding//src/test/spark-3.3-plus=UTF-8
+encoding//src/test/spark-3.4=UTF-8
+encoding//target/generated-sources=UTF-8
 encoding/<project>=UTF-8
